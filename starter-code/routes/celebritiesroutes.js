@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Celebrity = require("../models/Celebrity");
-const toastr = require("toastr");
 
 router.get("/", (req, res, next) => {
   Celebrity.find()
